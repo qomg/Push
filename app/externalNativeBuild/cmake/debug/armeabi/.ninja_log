@@ -1,0 +1,20 @@
+# ninja log v5
+0	275	0	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	ab486e9864a3596b
+277	403	0	../../../../build/intermediates/cmake/debug/obj/armeabi/libnative-lib.so	40478f981792926f
+0	247	0	CMakeFiles/daemon-process.dir/src/main/cpp/daemon-process.cpp.o	eb5242bd28a4f8b1
+2	207	0	CMakeFiles/daemon-process.dir/src/main/cpp/daemon-process.cpp.o	eb5242bd28a4f8b1
+2	263	0	CMakeFiles/daemon-process.dir/src/main/cpp/daemon-process.cpp.o	eb5242bd28a4f8b1
+2	242	0	CMakeFiles/daemon-process.dir/src/main/cpp/daemon-process.cpp.o	eb5242bd28a4f8b1
+2	208	0	CMakeFiles/daemon-process.dir/src/main/cpp/daemon-process.cpp.o	eb5242bd28a4f8b1
+2	1745	0	CMakeFiles/daemon-process.dir/src/main/cpp/daemon-process.cpp.o	eb5242bd28a4f8b1
+2	253	0	CMakeFiles/daemon-process.dir/src/main/cpp/daemon-process.cpp.o	eb5242bd28a4f8b1
+5	2714	0	CMakeFiles/daemon-process.dir/src/main/cpp/daemon-process.cpp.o	eb5242bd28a4f8b1
+2	255	0	CMakeFiles/daemon-process.dir/src/main/cpp/daemon-process.cpp.o	eb5242bd28a4f8b1
+3	294	0	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	ab486e9864a3596b
+295	444	0	../../../../build/intermediates/cmake/debug/obj/armeabi/libnative-lib.so	40478f981792926f
+1	188	0	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	ab486e9864a3596b
+3	295	0	CMakeFiles/daemon-process.dir/src/main/cpp/daemon-process.cpp.o	eb5242bd28a4f8b1
+2	251	0	CMakeFiles/daemon-process.dir/src/main/cpp/daemon-process.cpp.o	eb5242bd28a4f8b1
+2	252	0	CMakeFiles/daemon-process.dir/src/main/cpp/daemon-process.cpp.o	eb5242bd28a4f8b1
+252	359	0	../../../../build/intermediates/cmake/debug/obj/armeabi/libdaemon-process.so	1de5062761cf70a1
+2	133	0	../../../../build/intermediates/cmake/debug/obj/armeabi/libnative-lib.so	4befde5a54706cb5

@@ -1,0 +1,4 @@
+C:/Users/yazha/AndroidStudioProjects/Push/app/externalNativeBuild/cmake/release/x86/CMakeFiles/native-lib.dir
+C:/Users/yazha/AndroidStudioProjects/Push/app/externalNativeBuild/cmake/release/x86/CMakeFiles/rebuild_cache.dir
+C:/Users/yazha/AndroidStudioProjects/Push/app/externalNativeBuild/cmake/release/x86/CMakeFiles/daemon-process.dir
+C:/Users/yazha/AndroidStudioProjects/Push/app/externalNativeBuild/cmake/release/x86/CMakeFiles/edit_cache.dir

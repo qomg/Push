@@ -1,0 +1,56 @@
+
+{
+	"buildFiles" : [ "C:/Users/yazha/AndroidStudioProjects/Push/app/CMakeLists.txt" ],
+	"cleanCommands" : 
+	[
+		"D:\\Android\\sdk\\cmake\\3.6.3133135\\bin\\cmake.exe --build C:\\Users\\yazha\\AndroidStudioProjects\\Push\\app\\externalNativeBuild\\cmake\\release\\armeabi-v7a --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"daemon-process-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "daemon-process",
+			"buildCommand" : "D:\\Android\\sdk\\cmake\\3.6.3133135\\bin\\cmake.exe --build C:\\Users\\yazha\\AndroidStudioProjects\\Push\\app\\externalNativeBuild\\cmake\\release\\armeabi-v7a --target daemon-process",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  -target armv7-none-linux-androideabi -gcc-toolchain D:/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=D:/Android/sdk/ndk-bundle/platforms/android-22/arch-arm  -Ddaemon_process_EXPORTS -isystem D:\\Android\\sdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem D:\\Android\\sdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\armeabi-v7a\\include -isystem D:\\Android\\sdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -fno-exceptions -fno-rtti -std=c++11 -frtti -fexceptions -Os -DNDEBUG  -fPIC    -c ",
+					"src" : "C:/Users/yazha/AndroidStudioProjects/Push/app/src/main/cpp/daemon-process.cpp",
+					"workingDirectory" : "C:/Users/yazha/AndroidStudioProjects/Push/app/externalNativeBuild/cmake/release/armeabi-v7a"
+				}
+			],
+			"output" : "C:/Users/yazha/AndroidStudioProjects/Push/app/build/intermediates/cmake/release/obj/armeabi-v7a/libdaemon-process.so",
+			"toolchain" : "423535169"
+		},
+		"native-lib-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "native-lib",
+			"buildCommand" : "D:\\Android\\sdk\\cmake\\3.6.3133135\\bin\\cmake.exe --build C:\\Users\\yazha\\AndroidStudioProjects\\Push\\app\\externalNativeBuild\\cmake\\release\\armeabi-v7a --target native-lib",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  -target armv7-none-linux-androideabi -gcc-toolchain D:/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=D:/Android/sdk/ndk-bundle/platforms/android-22/arch-arm  -Dnative_lib_EXPORTS -isystem D:\\Android\\sdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem D:\\Android\\sdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\armeabi-v7a\\include -isystem D:\\Android\\sdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -fno-exceptions -fno-rtti -std=c++11 -frtti -fexceptions -Os -DNDEBUG  -fPIC    -c ",
+					"src" : "C:/Users/yazha/AndroidStudioProjects/Push/app/src/main/cpp/native-lib.cpp",
+					"workingDirectory" : "C:/Users/yazha/AndroidStudioProjects/Push/app/externalNativeBuild/cmake/release/armeabi-v7a"
+				}
+			],
+			"output" : "C:/Users/yazha/AndroidStudioProjects/Push/app/build/intermediates/cmake/release/obj/armeabi-v7a/libnative-lib.so",
+			"toolchain" : "423535169"
+		}
+	},
+	"toolchains" : 
+	{
+		"423535169" : 
+		{
+			"cCompilerExecutable" : "D:/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+			"cppCompilerExecutable" : "D:/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
+		}
+	}
+}

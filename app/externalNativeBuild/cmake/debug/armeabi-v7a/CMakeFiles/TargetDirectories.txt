@@ -1,0 +1,4 @@
+C:/Users/yazha/AndroidStudioProjects/Push/app/externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/native-lib.dir
+C:/Users/yazha/AndroidStudioProjects/Push/app/externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+C:/Users/yazha/AndroidStudioProjects/Push/app/externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/daemon-process.dir
+C:/Users/yazha/AndroidStudioProjects/Push/app/externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/edit_cache.dir

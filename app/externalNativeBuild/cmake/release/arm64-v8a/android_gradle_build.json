@@ -1,0 +1,56 @@
+
+{
+	"buildFiles" : [ "C:/Users/yazha/AndroidStudioProjects/Push/app/CMakeLists.txt" ],
+	"cleanCommands" : 
+	[
+		"D:\\Android\\sdk\\cmake\\3.6.3133135\\bin\\cmake.exe --build C:\\Users\\yazha\\AndroidStudioProjects\\Push\\app\\externalNativeBuild\\cmake\\release\\arm64-v8a --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"daemon-process-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "daemon-process",
+			"buildCommand" : "D:\\Android\\sdk\\cmake\\3.6.3133135\\bin\\cmake.exe --build C:\\Users\\yazha\\AndroidStudioProjects\\Push\\app\\externalNativeBuild\\cmake\\release\\arm64-v8a --target daemon-process",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  -target aarch64-none-linux-android -gcc-toolchain D:/Android/sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/Android/sdk/ndk-bundle/platforms/android-22/arch-arm64  -Ddaemon_process_EXPORTS -isystem D:\\Android\\sdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem D:\\Android\\sdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\arm64-v8a\\include -isystem D:\\Android\\sdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -fno-exceptions -fno-rtti -std=c++11 -frtti -fexceptions -O2 -DNDEBUG  -fPIC    -c ",
+					"src" : "C:/Users/yazha/AndroidStudioProjects/Push/app/src/main/cpp/daemon-process.cpp",
+					"workingDirectory" : "C:/Users/yazha/AndroidStudioProjects/Push/app/externalNativeBuild/cmake/release/arm64-v8a"
+				}
+			],
+			"output" : "C:/Users/yazha/AndroidStudioProjects/Push/app/build/intermediates/cmake/release/obj/arm64-v8a/libdaemon-process.so",
+			"toolchain" : "423535169"
+		},
+		"native-lib-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "native-lib",
+			"buildCommand" : "D:\\Android\\sdk\\cmake\\3.6.3133135\\bin\\cmake.exe --build C:\\Users\\yazha\\AndroidStudioProjects\\Push\\app\\externalNativeBuild\\cmake\\release\\arm64-v8a --target native-lib",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  -target aarch64-none-linux-android -gcc-toolchain D:/Android/sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/Android/sdk/ndk-bundle/platforms/android-22/arch-arm64  -Dnative_lib_EXPORTS -isystem D:\\Android\\sdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem D:\\Android\\sdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\arm64-v8a\\include -isystem D:\\Android\\sdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -fno-exceptions -fno-rtti -std=c++11 -frtti -fexceptions -O2 -DNDEBUG  -fPIC    -c ",
+					"src" : "C:/Users/yazha/AndroidStudioProjects/Push/app/src/main/cpp/native-lib.cpp",
+					"workingDirectory" : "C:/Users/yazha/AndroidStudioProjects/Push/app/externalNativeBuild/cmake/release/arm64-v8a"
+				}
+			],
+			"output" : "C:/Users/yazha/AndroidStudioProjects/Push/app/build/intermediates/cmake/release/obj/arm64-v8a/libnative-lib.so",
+			"toolchain" : "423535169"
+		}
+	},
+	"toolchains" : 
+	{
+		"423535169" : 
+		{
+			"cCompilerExecutable" : "D:/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+			"cppCompilerExecutable" : "D:/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
+		}
+	}
+}
