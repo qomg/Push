@@ -28,12 +28,18 @@
 class ProcessBase {
 public:
 
+    // 子进程有权限访问父进程的私有目录,在此建立跨进程通信的套接字文件
     char* path;
+    // 服务名称
     char* service_name;
     /**
     * 应用进程的UID.
     */
-    char* g_userId = NULL;
+    char* g_userId;
+    /**
+     * 全局的JNIEnv，子进程有时会用到它
+     */
+    JNIEnv* g_env;
 
     ProcessBase();
 
@@ -96,11 +102,6 @@ public:
 protected:
 
     int m_channel;
-
-    //TODO 修改包名 子进程有权限访问父进程的私有目录,在此建立跨进程通信的套接字文件
-    // const char* PATH = "/data/data/com.boanda.tool.push/my.sock";
-    //TODO 修改包名 服务名称
-    // const char* SERVICE_NAME = "com.boanda.tool.push/com.boanda.tool.push.service.PushService";
 
 };
 

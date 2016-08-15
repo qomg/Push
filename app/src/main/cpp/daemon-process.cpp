@@ -22,16 +22,12 @@ JNIEXPORT jint JNICALL JNI_OnLoad( JavaVM* , void* );
 */
 ProcessBase *g_process = NULL;
 
-JNIEXPORT jboolean JNICALL Java_com_boanda_tool_push_WatchDog_createWatcher( JNIEnv* env, jobject thiz, jstring user, jstring package, jstring service )
+JNIEXPORT jboolean JNICALL Java_com_boanda_tool_push_WatchDog_createWatcher( JNIEnv* env, jobject thiz, jstring user, jstring sock, jstring service )
 {
     g_process = new Parent( env, thiz );
 
-    char* prefix = "/data/data/";
-    const char* suffix = "/my.sock";
-    const char* split = "/";
-
-    g_process->path = strcat(strcat(prefix, (const char*)jstringTostr(env, package)), suffix);
-    g_process->service_name = strcat(strcat(jstringTostr(env, package), split), (const char*)jstringTostr(env, service));
+    g_process->path = jstringTostr(env, sock);
+    g_process->service_name = jstringTostr(env, service);
     g_process->g_userId  = jstringTostr(env, user);
 
     g_process->catch_child_dead_signal();
