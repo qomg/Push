@@ -6,7 +6,6 @@
 #include "Parent.h"
 #include "Utils.h"
 
-
 extern "C"
 {
 JNIEXPORT jboolean JNICALL Java_com_boanda_tool_push_WatchDog_createWatcher( JNIEnv*, jobject, jstring, jstring, jstring);

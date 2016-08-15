@@ -2,7 +2,7 @@
 // Created by yazha on 2016-08-10.
 //
 #include "Child.h"
-#include "Utils.h"
+
 
 bool Child::create_child( )
 {
@@ -57,12 +57,12 @@ void Child::restart_parent()
 /**
 * TODO 重启父进程,通过am启动Java空间的任一组件(service或者activity等)即可让应用重新启动
 */
-    int version = get_version();
-    if (version >= 17 || version == 0) {
+//    int version = get_sdk_version();
+//    if (version >= 17 || version == 0) {
         execlp("am", "am", "startservice", "--user", g_userId, "-n", service_name, (char *) NULL);
-    } else {
-        execlp("am", "am", "startservice", "-n", service_name, (char *) NULL);
-    }
+//    } else {
+//        execlp("am", "am", "startservice", "-n", service_name, (char *) NULL);
+//    }
 
     /*
     execlp( "am",

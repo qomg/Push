@@ -6,7 +6,7 @@
 /**
 * 全局变量，代表应用程序进程.
 */
-ProcessBase *g_process = NULL;
+ProcessBase *m_process = NULL;
 /**
     * 全局的JNIEnv，子进程有时会用到它.
     */
@@ -18,14 +18,14 @@ Parent::Parent(JNIEnv *env, jobject jobj)
 
     m_jobj = env->NewGlobalRef(jobj);
     m_env = env;
-    g_process = this;
+    m_process = this;
 }
 
 Parent::~Parent()
 {
     LOGE( "<<Parent::~Parent()>>" );
 
-    g_process = NULL;
+    m_process = NULL;
 }
 
 void Parent::do_work()
@@ -102,9 +102,9 @@ static void sig_handler( int signo )
 //信号以给子进程收尸，防止它变成僵尸进程
     pid = wait(&status);
 
-    if( g_process != NULL )
+    if( m_process != NULL )
     {
-        g_process->on_child_end();
+        m_process->on_child_end();
     }
 }
 
