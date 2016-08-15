@@ -6,6 +6,7 @@
 #define PUSH_PARENT_H
 
 #include "ProcessBase.h"
+#include "Child.h"
 
 /**
  * 功能：父进程的实现
@@ -39,7 +40,7 @@ public:
 
 private:
 
-    JNIEnv *m_env;
+    //JNIEnv *m_env;
 
     jobject m_jobj;
 

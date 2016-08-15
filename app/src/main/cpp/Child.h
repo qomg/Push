@@ -6,6 +6,7 @@
 #define PUSH_CHILD_H
 
 #include "ProcessBase.h"
+//#include "Parent.h"
 
 /**
 * 子进程的实现

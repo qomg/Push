@@ -18,13 +18,22 @@
 #include <errno.h>
 #include <stdlib.h>
 #include <android/log.h>
-#include "constants.h"
 
+#define LOG_TAG "Native"
+
+#define LOGE(...) __android_log_print(ANDROID_LOG_ERROR,LOG_TAG,__VA_ARGS__)
 /**
  * 功能:对父子进程的一个抽象
  */
 class ProcessBase {
 public:
+
+    char* path;
+    char* service_name;
+    /**
+    * 应用进程的UID.
+    */
+    char* g_userId = NULL;
 
     ProcessBase();
 
@@ -88,6 +97,12 @@ protected:
 
     int m_channel;
 
+    //TODO 修改包名 子进程有权限访问父进程的私有目录,在此建立跨进程通信的套接字文件
+    // const char* PATH = "/data/data/com.boanda.tool.push/my.sock";
+    //TODO 修改包名 服务名称
+    // const char* SERVICE_NAME = "com.boanda.tool.push/com.boanda.tool.push.service.PushService";
+
 };
+
 
 #endif //PUSH_PROCESSBASE_H
