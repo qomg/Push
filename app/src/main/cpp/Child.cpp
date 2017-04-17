@@ -63,17 +63,6 @@ void Child::restart_parent()
 //    } else {
 //        execlp("am", "am", "startservice", "-n", service_name, (char *) NULL);
 //    }
-
-    /*
-    execlp( "am",
-            "am",
-            "startservice",
-            "--user",
-            g_userId,
-            "-n",
-            SERVICE_NAME, //注意此处的名称
-            (char *)NULL);
-     */
 }
 
 void* Child::parent_monitor()

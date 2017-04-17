@@ -3,29 +3,17 @@
 //
 #include "Parent.h"
 
-/**
-* 全局变量，代表应用程序进程.
-*/
-ProcessBase *m_process = NULL;
-/**
-    * 全局的JNIEnv，子进程有时会用到它.
-    */
-static JNIEnv* m_env = NULL;
-
 Parent::Parent(JNIEnv *env, jobject jobj)
 {
     LOGE("<<new parent instance>>");
 
     m_jobj = env->NewGlobalRef(jobj);
     m_env = env;
-    m_process = this;
 }
 
 Parent::~Parent()
 {
     LOGE( "<<Parent::~Parent()>>" );
-
-    m_process = NULL;
 }
 
 void Parent::do_work()
@@ -101,11 +89,11 @@ static void sig_handler( int signo )
 //调用wait等待子进程死亡时发出的SIGCHLD
 //信号以给子进程收尸，防止它变成僵尸进程
     pid = wait(&status);
-
-    if( m_process != NULL )
+    if(g_process != NULL)
     {
-        m_process->on_child_end();
+        g_process->on_child_end();
     }
+
 }
 
 void Parent::catch_child_dead_signal()
